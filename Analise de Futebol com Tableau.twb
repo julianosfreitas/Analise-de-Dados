@@ -1,0 +1,947 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='dados_tratados' inline='true' name='federated.1lrboir1opl9n217wc2dy0kyaweh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dados_tratados' name='textscan.18ann46145zumi102gq0c1fmf457'>
+            <connection class='textscan' directory='C:/Users/julia/OneDrive/Área de Trabalho/dados_futebol' filename='dados_tratados.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.18ann46145zumi102gq0c1fmf457' name='dados_tratados.csv' table='[dados_tratados#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=','>
+            <column datatype='string' name='Nome' ordinal='0' />
+            <column datatype='string' name='Posição' ordinal='1' />
+            <column datatype='boolean' name='Titular' ordinal='2' />
+            <column datatype='integer' name='Nª Partida' ordinal='3' />
+            <column datatype='string' name='Time Adversário' ordinal='4' />
+            <column datatype='boolean' name='Vitória' ordinal='5' />
+            <column datatype='integer' name='Gols' ordinal='6' />
+            <column datatype='integer' name='Assistências' ordinal='7' />
+            <column datatype='string' name='Desarmes' ordinal='8' />
+            <column datatype='string' name='Desarmado' ordinal='9' />
+            <column datatype='integer' name='Cartão Amarelo' ordinal='10' />
+            <column datatype='integer' name='Cartão Vermelho' ordinal='11' />
+            <column datatype='string' name='Passes certos' ordinal='12' />
+            <column datatype='string' name='Passes errados' ordinal='13' />
+            <column datatype='string' name='Chutes a gol' ordinal='14' />
+            <column datatype='integer' name='Tempo em Campo' ordinal='15' />
+            <column datatype='boolean' name='Lesão' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.18ann46145zumi102gq0c1fmf457' name='dados_tratados.csv' table='[dados_tratados#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=','>
+            <column datatype='string' name='Nome' ordinal='0' />
+            <column datatype='string' name='Posição' ordinal='1' />
+            <column datatype='boolean' name='Titular' ordinal='2' />
+            <column datatype='integer' name='Nª Partida' ordinal='3' />
+            <column datatype='string' name='Time Adversário' ordinal='4' />
+            <column datatype='boolean' name='Vitória' ordinal='5' />
+            <column datatype='integer' name='Gols' ordinal='6' />
+            <column datatype='integer' name='Assistências' ordinal='7' />
+            <column datatype='string' name='Desarmes' ordinal='8' />
+            <column datatype='string' name='Desarmado' ordinal='9' />
+            <column datatype='integer' name='Cartão Amarelo' ordinal='10' />
+            <column datatype='integer' name='Cartão Vermelho' ordinal='11' />
+            <column datatype='string' name='Passes certos' ordinal='12' />
+            <column datatype='string' name='Passes errados' ordinal='13' />
+            <column datatype='string' name='Chutes a gol' ordinal='14' />
+            <column datatype='integer' name='Tempo em Campo' ordinal='15' />
+            <column datatype='boolean' name='Lesão' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;R$&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;pt_BR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Nome]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Nome</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Posição</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Posição]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Posição</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Titular</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Titular]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Titular</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nª Partida</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nª Partida]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Nª Partida</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time Adversário</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Time Adversário]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Time Adversário</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vitória</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Vitória]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Vitória</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gols</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gols]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Gols</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Assistências</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Assistências]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Assistências</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Desarmes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Desarmes]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Desarmes</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Desarmado</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Desarmado]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Desarmado</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cartão Amarelo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cartão Amarelo]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Cartão Amarelo</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cartão Vermelho</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cartão Vermelho]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Cartão Vermelho</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes certos</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Passes certos]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Passes certos</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Passes errados</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Passes errados]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Passes errados</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Chutes a gol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Chutes a gol]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Chutes a gol</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LPT_RBR' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tempo em Campo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tempo em Campo]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Tempo em Campo</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Lesão</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Lesão]</local-name>
+            <parent-name>[dados_tratados.csv]</parent-name>
+            <remote-alias>Lesão</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='dados_tratados.csv' datatype='table' name='[__tableau_internal_object_id__].[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='pt_BR' class='hyper' dbname='C:/Users/julia/AppData/Local/Temp/TableauTemp/#TableauTemp_1d19rd40mtp96g1g2k86w1dqjfzo.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/26/2024 07:24:49 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Nome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Nome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nome</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Posição</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Posição]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Posição</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Titular</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Titular]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Titular</remote-alias>
+              <ordinal>2</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nª Partida</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Nª Partida]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nª Partida</remote-alias>
+              <ordinal>3</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time Adversário</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Time Adversário]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time Adversário</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vitória</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Vitória]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vitória</remote-alias>
+              <ordinal>5</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gols</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gols]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gols</remote-alias>
+              <ordinal>6</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Assistências</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Assistências]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Assistências</remote-alias>
+              <ordinal>7</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Desarmes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Desarmes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Desarmes</remote-alias>
+              <ordinal>8</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Desarmado</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Desarmado]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Desarmado</remote-alias>
+              <ordinal>9</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cartão Amarelo</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cartão Amarelo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cartão Amarelo</remote-alias>
+              <ordinal>10</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cartão Vermelho</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cartão Vermelho]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cartão Vermelho</remote-alias>
+              <ordinal>11</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Passes certos</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Passes certos]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Passes certos</remote-alias>
+              <ordinal>12</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Passes errados</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Passes errados]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Passes errados</remote-alias>
+              <ordinal>13</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Chutes a gol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Chutes a gol]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Chutes a gol</remote-alias>
+              <ordinal>14</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LPT_RBR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tempo em Campo</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Tempo em Campo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tempo em Campo</remote-alias>
+              <ordinal>15</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Lesão</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Lesão]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Lesão</remote-alias>
+              <ordinal>16</ordinal>
+              <family>dados_tratados.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='dados_tratados.csv' id='dados_tratados.csv_52397CDFE2864232864916C9A9DC58C1'>
+            <properties context=''>
+              <relation connection='textscan.18ann46145zumi102gq0c1fmf457' name='dados_tratados.csv' table='[dados_tratados#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='pt_BR' separator=','>
+                  <column datatype='string' name='Nome' ordinal='0' />
+                  <column datatype='string' name='Posição' ordinal='1' />
+                  <column datatype='boolean' name='Titular' ordinal='2' />
+                  <column datatype='integer' name='Nª Partida' ordinal='3' />
+                  <column datatype='string' name='Time Adversário' ordinal='4' />
+                  <column datatype='boolean' name='Vitória' ordinal='5' />
+                  <column datatype='integer' name='Gols' ordinal='6' />
+                  <column datatype='integer' name='Assistências' ordinal='7' />
+                  <column datatype='string' name='Desarmes' ordinal='8' />
+                  <column datatype='string' name='Desarmado' ordinal='9' />
+                  <column datatype='integer' name='Cartão Amarelo' ordinal='10' />
+                  <column datatype='integer' name='Cartão Vermelho' ordinal='11' />
+                  <column datatype='string' name='Passes certos' ordinal='12' />
+                  <column datatype='string' name='Passes errados' ordinal='13' />
+                  <column datatype='string' name='Chutes a gol' ordinal='14' />
+                  <column datatype='integer' name='Tempo em Campo' ordinal='15' />
+                  <column datatype='boolean' name='Lesão' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Planilha 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dados_tratados' name='federated.1lrboir1opl9n217wc2dy0kyaweh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lrboir1opl9n217wc2dy0kyaweh'>
+            <column datatype='integer' name='[Assistências]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Gols]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Nome]' role='dimension' type='nominal' />
+            <column-instance column='[Nome]' derivation='None' name='[none:Nome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Assistências]' derivation='Sum' name='[sum:Assistências:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gols]' derivation='Sum' name='[sum:Gols:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1lrboir1opl9n217wc2dy0kyaweh].[none:Nome:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lrboir1opl9n217wc2dy0kyaweh].[sum:Assistências:qk]</rows>
+        <cols>[federated.1lrboir1opl9n217wc2dy0kyaweh].[sum:Gols:qk]</cols>
+      </table>
+      <simple-id uuid='{D46396EB-D33F-4243-BDE8-FBDF83F399F3}' />
+    </worksheet>
+    <worksheet name='Planilha 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dados_tratados' name='federated.1lrboir1opl9n217wc2dy0kyaweh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lrboir1opl9n217wc2dy0kyaweh'>
+            <column datatype='integer' name='[Gols]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Nome]' role='dimension' type='nominal' />
+            <column-instance column='[Nome]' derivation='None' name='[none:Nome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Gols]' derivation='Sum' name='[sum:Gols:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lrboir1opl9n217wc2dy0kyaweh].[none:Nome:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lrboir1opl9n217wc2dy0kyaweh].[sum:Gols:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lrboir1opl9n217wc2dy0kyaweh].[sum:Gols:qk]</rows>
+        <cols>[federated.1lrboir1opl9n217wc2dy0kyaweh].[none:Nome:nk]</cols>
+      </table>
+      <simple-id uuid='{002A7593-48B8-497B-B605-A4B099EA2CA1}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Planilha 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1lrboir1opl9n217wc2dy0kyaweh].[none:Nome:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{88EC4B51-9883-459F-8E8C-27EC053C90F2}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Planilha 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1lrboir1opl9n217wc2dy0kyaweh].[none:Nome:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6B5E73D2-5293-458B-8B5A-1240920FC30B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Planilha 1' width='192'>
+      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
+      SKEa/he/ra2xdS9d4AAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Planilha 2' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
